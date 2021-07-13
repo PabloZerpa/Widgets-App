@@ -1,0 +1,137 @@
+.favoritesApp {
+  width: 400px;
+  height: 250px;
+  margin: 10px;
+  background: #242525;
+  border: none;
+  box-shadow: 0 0 10px #000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favoritesApp .linkArea {
+  width: 400px;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-image: linear-gradient(176deg, #3D9DEA, #2844e2);
+  box-shadow: inset 0px 0px 5px #000;
+}
+
+.favoritesApp .linkArea #favArea {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.favoritesApp .linkArea #favArea .card {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100px;
+  height: 60px;
+  margin: 16px;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+  text-decoration: none;
+}
+
+.favoritesApp .linkArea #favArea .card .cardLink {
+  width: 100px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #242525;
+  box-shadow: 0px 3px 3px #000;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.favoritesApp .linkArea #favArea .card .cardLink .linkName {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #fff;
+}
+
+.favoritesApp .linkArea #favArea .card .cardLink .link {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  list-style: none;
+}
+
+.favoritesApp .linkArea #favArea .card .cardLink .link img {
+  width: 30px;
+  height: 30px;
+}
+
+.favoritesApp .linkArea #favArea .card button {
+  color: #242525;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  bottom: -35%;
+  left: 30%;
+  cursor: pointer;
+}
+
+.favoritesApp .linkArea #favArea .card #deleteLink {
+  left: 70%;
+}
+
+.favoritesApp .favFormArea {
+  width: 100%;
+  height: 150px;
+  background-color: #242525;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 0px 10px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favoritesApp .favFormArea #favForm {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: bold;
+}
+
+.favoritesApp .favFormArea #favForm label {
+  font-size: 20px;
+  color: #fff;
+  margin: 10px 0 10px 30px;
+  display: block;
+}
+
+.favoritesApp .favFormArea #favForm input {
+  font-size: 14px;
+  margin: 10px 0 10px 0px;
+  border: 2px solid black;
+  display: block;
+}
+
+.favoritesApp .favFormArea #favForm .favBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.favoritesApp .favFormArea #favForm .favBtn input {
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin: 10px 0 10px 0;
+  cursor: pointer;
+}
+
+.favoritesApp .favFormArea #favForm .favBtn input:hover {
+  opacity: .5;
+}
+/*# sourceMappingURL=favorites.css.map */

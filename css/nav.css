@@ -1,0 +1,168 @@
+/*   color variables */
+/*   border radius */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  margin-top: 5px;
+  margin-left: 5px;
+  flex-direction: column-reverse;
+  gap: .5em;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 999;
+}
+
+.nav button {
+  font-family: inherit;
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 1rem;
+  width: 4rem;
+  height: 4rem;
+  box-shadow: 0px 0px 5px #767b91;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+.nav button svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #4f546c;
+  transition: 600ms transform cubic-bezier(0.785, 0.18, 0.415, 1.65);
+}
+
+.nav button:hover {
+  transform: scale(1.1);
+}
+
+.nav .add {
+  z-index: 99;
+  transition: 600ms transform cubic-bezier(0.785, 0.18, 0.415, 1.65);
+}
+
+.nav .Favorites,
+.nav .Traslate,
+.nav .Calendar,
+.nav .Clock,
+.nav .Calculator,
+.nav .ToDo,
+.nav .Background,
+.nav .SignOut {
+  position: relative;
+  bottom: 7rem;
+  opacity: 0;
+  transform: rotatez(180deg);
+  transition: 500ms all cubic-bezier(0.785, 0.18, 0.415, 1.65);
+  pointer-events: none;
+}
+
+.nav-open .Favorites,
+.nav-open .Traslate,
+.nav-open .Calendar,
+.nav-open .Clock,
+.nav-open .Calculator,
+.nav-open .ToDo,
+.nav-open .Background,
+.nav-open .SignOut {
+  opacity: 1;
+  bottom: 0;
+  transform: rotatez(0deg);
+  pointer-events: auto;
+}
+
+.nav-open .Favorites::after,
+.nav-open .Traslate::after,
+.nav-open .Calendar::after,
+.nav-open .Clock::after,
+.nav-open .Calculator::after,
+.nav-open .ToDo::after,
+.nav-open .Background::after,
+.nav-open .SignOut::after {
+  content: attr(class);
+  position: absolute;
+  left: 4.5rem;
+  top: 50%;
+  transform: translatey(-50%);
+  background-color: #303030;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  pointer-events: none;
+  display: none;
+}
+
+.nav-open .Favorites:hover::after,
+.nav-open .Traslate:hover::after,
+.nav-open .Calendar:hover::after,
+.nav-open .Clock:hover::after,
+.nav-open .Calculator:hover::after,
+.nav-open .ToDo:hover::after,
+.nav-open .SignOut:hover::after {
+  display: block;
+}
+
+.nav-open .add svg {
+  transform: rotatez(135deg);
+}
+
+.nav #bgColor {
+  display: none;
+  position: absolute;
+  left: 4.35rem;
+  top: 15%;
+  background-color: #303030;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+}
+
+.nav #bgColor:hover ul {
+  display: block;
+}
+
+.nav ul {
+  display: none;
+  position: absolute;
+  list-style: none;
+  width: 120px;
+  left: 5rem;
+  top: 15%;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #525252;
+  border-radius: 0.2rem;
+}
+
+.nav ul li {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #303030;
+  color: white;
+}
+
+.nav ul li:last-child {
+  border-bottom: none;
+}
+
+.nav ul li:hover {
+  background-color: gray;
+}
+
+.nav ul input[type="file"] {
+  display: none;
+}
+
+.nav ul .picture {
+  display: inline-block;
+  padding: 3px 0px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=nav.css.map */

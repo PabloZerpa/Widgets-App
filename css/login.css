@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  /*background: url(.../img/bg.jpg) no-repeat center top;*/
+  background: linear-gradient(#0f37b8, #000);
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.login-box {
+  width: 350px;
+  height: 425px;
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 50px 30px;
+}
+
+.login-box .logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: -60px;
+  left: calc(50% - 50px);
+  position: absolute;
+}
+
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0 0 20px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 30px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.login-box button {
+  border: none;
+  background: #0f37b8;
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  outline: none;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  border: 2px solid #fff;
+  background: #164cff;
+}
+
+.login-box button a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 20px;
+  color: darkgray;
+  display: block;
+}
+
+.login-box a:hover {
+  color: #fff;
+}
+/*# sourceMappingURL=login.css.map */

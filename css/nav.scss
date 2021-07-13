@@ -1,0 +1,179 @@
+/*   color variables */
+$clr-primary: #888a8f;
+$clr-primary-hover: #29e6a7;
+$clr-primary-dark: #039d69;
+$clr-gray100: #f9fbff;
+$clr-gray150: #f4f6fb;
+$clr-gray200: #eef1f6;
+$clr-gray300: #e1e5ee;
+$clr-gray400: #767b91;
+$clr-gray500: #4f546c;
+$clr-gray600: #2a324b;
+$clr-gray700: #161d34;
+
+/*   border radius */
+$radius: 0.2rem;
+
+$animation: cubic-bezier(0.785, 0.18, 0.415, 1.65);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  margin-top: 5px;
+  margin-left: 5px;
+  flex-direction: column-reverse;
+  gap: .5em;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 999;
+
+  button {
+    font-family: inherit;
+    outline: none;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    width: 4rem;
+    height: 4rem;
+    box-shadow: 0px 0px 5px $clr-gray400;
+    border-radius: 20%;
+    cursor: pointer;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      fill: $clr-gray500;
+      transition: 600ms transform $animation;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .add {
+    z-index: 99;
+    transition: 600ms transform $animation;
+  }
+
+  .Favorites,
+  .Traslate,
+  .Calendar,
+  .Clock,
+  .Calculator,
+  .ToDo,
+  .Background,
+  .SignOut {
+    position: relative;
+    bottom: 7rem;
+    opacity: 0;
+    transform: rotatez(180deg);
+    transition: 500ms all $animation;
+    pointer-events: none;
+  }
+
+  &-open .Favorites,
+  &-open .Traslate,
+  &-open .Calendar,
+  &-open .Clock,
+  &-open .Calculator,
+  &-open .ToDo,
+  &-open .Background,
+  &-open .SignOut {
+    opacity: 1;
+    bottom: 0;
+    transform: rotatez(0deg);
+    pointer-events: auto;
+
+    &::after {
+      content: attr(class);
+      position: absolute;
+      left: 4.5rem;
+      top: 50%;
+      transform: translatey(-50%);
+      background-color: #303030;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: $radius;
+      pointer-events: none;
+      display: none;
+    }
+  }
+
+  &-open .Favorites:hover::after,
+  &-open .Traslate:hover::after,
+  &-open .Calendar:hover::after,
+  &-open .Clock:hover::after,
+  &-open .Calculator:hover::after,
+  &-open .ToDo:hover::after,
+  &-open .SignOut:hover::after {
+    display: block;
+  }
+
+  &-open .add svg {
+    transform: rotatez(135deg);
+  }
+
+  #bgColor {
+    display: none;
+    position: absolute;
+    left: 4.35rem;
+    top: 15%;
+    background-color: #303030;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+  }
+  
+  #bgColor:hover ul {
+    display: block;   
+  }
+  
+  ul {
+    display: none;  
+    position: absolute;
+    list-style:none;
+    width: 120px;
+    left: 5rem;
+    top: 15%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgb(82, 82, 82);
+    border-radius: 0.2rem;
+    
+    li {
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      background-color: #303030;
+      color: white;
+    }
+    
+    li:last-child {
+      border-bottom: none;
+    }
+    
+    li:hover {
+      background-color: rgb(128, 128, 128);
+    }
+  
+    input[type="file"] 
+    {
+      display: none;
+    }
+  
+    .picture
+    {
+        display: inline-block;
+        padding: 3px 0px;
+        cursor: pointer;
+    }
+  }
+  
+}

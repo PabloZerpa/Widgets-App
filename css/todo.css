@@ -1,0 +1,209 @@
+.appTodo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 0fr);
+  width: 1000px;
+  height: 360px;
+}
+
+.appTodo h3 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.appTodo ul {
+  list-style: none;
+}
+
+.appTodo li {
+  margin: 10px;
+  padding: 20px 0 20px 0;
+  border-radius: 3px;
+  width: 280px;
+  box-shadow: 0 0 5px #000;
+}
+
+.appTodo input, .appTodo textarea {
+  font-size: 15px;
+  width: 250px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+}
+
+.appTodo textarea {
+  height: 50px;
+}
+
+.appTodo label {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.appTodo li label {
+  background: white;
+  border-radius: 3px;
+}
+
+.appTodo p {
+  background: white;
+  border-radius: 3px;
+  width: 250px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.appTodo .addTask,
+.appTodo .todo,
+.appTodo .doing,
+.appTodo .done {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin-left: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+}
+
+.appTodo .addTask .point,
+.appTodo .todo .point,
+.appTodo .doing .point,
+.appTodo .done .point {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background: gold;
+  box-shadow: 0 0 8px #000;
+}
+
+.appTodo .addTask input,
+.appTodo .todo input,
+.appTodo .doing input,
+.appTodo .done input {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.appTodo .addTask textarea,
+.appTodo .todo textarea,
+.appTodo .doing textarea,
+.appTodo .done textarea {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.appTodo .addTask label,
+.appTodo .todo label,
+.appTodo .doing label,
+.appTodo .done label {
+  font-weight: bold;
+  color: #fff;
+  background-color: transparent;
+}
+
+.appTodo .listButton {
+  background: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 60px;
+  height: 25px;
+  margin: 0 0 0 125px;
+  cursor: pointer;
+}
+
+.appTodo .listButton:hover {
+  border: 2px solid #000;
+  background: #afafaf;
+}
+
+.appTodo .addTask {
+  background: #929292;
+}
+
+.appTodo .addTask input, .appTodo .addTask textarea {
+  border: 1px #000000 solid;
+  border-radius: 0;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  cursor: text;
+  display: block;
+}
+
+.appTodo .addTask label {
+  font-size: 18px;
+  margin-left: 10px;
+  color: #000;
+  font-weight: normal;
+}
+
+.appTodo .addTask p {
+  display: inline;
+}
+
+.appTodo .addTask .box {
+  margin: 20px 0 0px 20px;
+  border-radius: 20px;
+  width: 300px;
+  height: 225px;
+  background: none;
+}
+
+.appTodo .todo {
+  background: #191919;
+}
+
+.appTodo .todo .point {
+  background: #8b1b07;
+}
+
+.appTodo .todo li {
+  background: #3b3b3b;
+}
+
+.appTodo .todo button {
+  margin: 20px 0 10px 120px;
+}
+
+.appTodo .doing {
+  background: #191919;
+}
+
+.appTodo .doing .point {
+  background: #004cda;
+}
+
+.appTodo .doing li {
+  background: #3b3b3b;
+}
+
+.appTodo .doing button {
+  margin: 20px 0 10px 120px;
+}
+
+.appTodo .done {
+  background: #191919;
+}
+
+.appTodo .done .point {
+  background: #08882f;
+}
+
+.appTodo .done li {
+  background: #3b3b3b;
+}
+
+.appTodo .done button {
+  margin: 20px 0 10px 120px;
+}
+/*# sourceMappingURL=todo.css.map */
