@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Widgets</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="css/calc.css">
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="css/traslate.css">
+    <link rel="stylesheet" href="css/favorites.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  
+  <body>
+    <!--- NAV -->
+    <nav class="nav">
+
+      <button class="SignOut" id="btnSignOut">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+        width="135.000000pt" height="100.000000pt" viewBox="0 0 135.000000 100.000000"
+        preserveAspectRatio="xMidYMid meet">
+        
+        <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)"
+        fill="#000000" stroke="none">
+        <path d="M590 953 c-19 -3 -39 -9 -44 -14 -6 -5 -20 -9 -31 -9 -37 0 -169 -51
+        -188 -72 -15 -18 -17 -47 -17 -283 0 -297 6 -277 -79 -273 -57 2 -80 -31 -45
+        -66 14 -14 48 -16 257 -14 l242 3 3 349 c2 314 1 351 -14 368 -10 10 -24 17
+        -33 16 -9 0 -32 -3 -51 -5z m0 -357 c0 -40 -24 -65 -48 -49 -41 25 -13 115 29
+        92 13 -6 19 -21 19 -43z"/>
+       <path d="M734 845 c-11 -45 0 -55 65 -55 50 0 62 -3 71 -20 7 -13 11 -109 10
+       -273 -1 -138 -1 -258 0 -264 0 -18 201 -18 218 -1 18 18 15 56 -5 66 -10 5
+       -32 7 -49 5 -18 -3 -41 0 -53 6 -21 11 -21 17 -21 259 l0 248 -28 27 c-26 25
+       -34 27 -115 27 -84 0 -87 -1 -93 -25z"/>
+       </g>
+      </svg>
+      </button>
+
+      <button class="Traslate" id="btnTraslate">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+        width="164.000000pt" height="89.000000pt" viewBox="0 0 164.000000 89.000000"
+          preserveAspectRatio="xMidYMid meet">
+         
+          <g transform="translate(0.000000,89.000000) scale(0.100000,-0.100000)"
+         fill="#000000" stroke="none">
+         <path d="M132 767 c-22 -23 -22 -29 -22 -328 l0 -306 23 -21 c23 -22 29 -22
+         320 -22 l297 0 0 350 0 350 -298 0 -299 0 -21 -23z m416 -297 c35 -102 64
+         -196 65 -210 2 -24 -1 -25 -52 -25 -52 0 -54 1 -65 35 -11 35 -12 35 -73 38
+         -61 3 -63 2 -63 -21 0 -36 -31 -59 -77 -55 -32 3 -38 7 -41 29 -4 31 104 357
+         126 382 12 14 28 17 66 15 l51 -3 63 -185z"/>
+         <path d="M412 478 c-19 -53 -16 -68 13 -68 29 0 33 25 12 74 l-12 28 -13 -34z"/>
+         <path d="M875 767 c-3 -7 -4 -158 -3 -337 l3 -325 295 -3 c162 -1 305 0 318 3
+         l22 5 0 329 c0 291 -2 330 -16 335 -9 3 -150 6 -315 6 -232 0 -301 -3 -304
+         -13z m383 -139 c12 -26 17 -28 81 -28 78 0 91 -9 91 -62 0 -34 -3 -38 -25 -38
+         -19 0 -28 -8 -39 -35 -8 -19 -26 -50 -40 -68 -32 -42 -32 -48 -1 -77 29 -27
+         31 -47 9 -78 -20 -29 -36 -28 -86 8 l-42 30 -25 -24 c-42 -39 -63 -40 -95 -7
+         -33 34 -30 56 9 71 36 14 41 37 15 65 -20 21 -22 29 -12 49 16 35 59 42 89 15
+         l24 -23 26 26 c14 14 22 31 19 37 -5 7 -52 11 -132 11 l-124 0 0 38 c0 52 14
+         62 85 62 58 0 61 1 72 31 11 27 15 30 50 27 30 -2 41 -9 51 -30z"/>
+         </g>
+        </svg>
+      </button>
+
+      <button class="Favorites" id="btnFavorites">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+          width="139.000000pt" height="129.000000pt" viewBox="0 0 139.000000 129.000000"
+          preserveAspectRatio="xMidYMid meet">
+         
+         <g transform="translate(0.000000,129.000000) scale(0.100000,-0.100000)"
+         fill="#000000" stroke="none">
+         <path d="M673 1210 c-16 -6 -46 -55 -98 -159 -56 -113 -82 -154 -102 -165 -16
+         -7 -72 -17 -126 -21 -53 -4 -100 -11 -103 -16 -3 -5 -24 -9 -48 -9 -51 0 -76
+         -22 -76 -66 0 -24 22 -51 126 -154 137 -136 130 -123 109 -220 -13 -59 -27
+         -159 -28 -209 -2 -47 1 -56 24 -74 l27 -19 154 76 c85 42 162 76 170 76 9 0
+         84 -34 168 -76 l153 -76 26 20 c30 22 39 75 22 132 -5 19 -14 69 -20 110 -5
+         41 -13 89 -16 105 -6 28 3 39 119 155 108 106 126 129 126 156 0 17 -8 38 -17
+         46 -19 17 -35 20 -208 41 -60 7 -120 18 -133 25 -14 8 -50 69 -97 162 -83 165
+         -98 182 -152 160z"/>
+         </g>
+        </svg>
+      </button>
+
+      <button class="Clock" id="btnClock">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+          width="129.000000pt" height="129.000000pt" viewBox="0 0 129.000000 129.000000"
+          preserveAspectRatio="xMidYMid meet">
+
+          <g transform="translate(0.000000,129.000000) scale(0.100000,-0.100000)"
+         fill="#000000" stroke="none">
+         <path d="M560 1201 c-8 -4 -33 -12 -54 -16 -75 -13 -198 -87 -259 -154 -39
+         -43 -99 -160 -118 -231 -16 -56 -16 -199 -1 -262 6 -26 29 -82 51 -126 61
+         -122 135 -184 317 -264 27 -12 216 -25 246 -17 123 35 137 40 223 95 73 46
+         125 108 164 194 19 41 39 86 45 99 6 13 11 78 11 145 0 130 -8 162 -64 274
+         -54 106 -203 220 -331 253 -57 15 -210 22 -230 10z m160 -360 c5 -157 7 -175
+         24 -185 10 -6 41 -28 67 -49 59 -45 65 -78 21 -120 -37 -36 -60 -34 -118 8
+         -27 20 -64 45 -82 56 -18 12 -37 29 -42 39 -15 29 -13 403 2 418 8 8 34 12 68
+         10 l55 -3 5 -174z"/>
+         </g>
+        </svg>
+      </button>
+
+      <button class="Calendar" id="btnCalendar">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="calendar-alt" 
+        class="svg-inline--fa fa-calendar-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 448 512">
+        <path fill="currentColor" d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 
+        48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 
+        12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 
+        12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 
+        0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 
+        12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 
+        268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 
+        128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 
+        64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 
+        16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path></svg>
+      </button>
+      
+      <button class="Calculator" id="btnCalculator">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+          width="125.000000pt" height="139.000000pt" viewBox="0 0 125.000000 139.000000"
+          preserveAspectRatio="xMidYMid meet">
+
+          <g transform="translate(0.000000,139.000000) scale(0.100000,-0.100000)"
+          fill="#000000" stroke="none">
+          <path d="M235 1219 l-35 -31 0 -498 0 -498 35 -31 36 -31 414 0 414 0 36 31
+          35 31 0 497 0 497 -33 32 -33 32 -417 0 -416 0 -36 -31z m799 -121 c12 -17 16
+          -49 16 -130 0 -160 30 -148 -361 -148 -202 0 -327 4 -340 10 -17 10 -19 22
+          -19 138 0 86 4 132 12 140 9 9 99 12 344 12 333 0 333 0 348 -22z m-572 -415
+          c24 -21 25 -99 1 -125 -18 -20 -82 -25 -114 -8 -27 15 -28 124 -1 139 27 16
+          93 13 114 -6z m279 7 c15 -9 19 -22 19 -70 0 -48 -4 -61 -19 -70 -30 -15 -97
+          -12 -115 6 -22 21 -21 102 1 126 18 20 82 25 114 8z m289 -10 c18 -18 20 -33
+          20 -198 0 -211 -4 -222 -77 -222 -81 0 -83 5 -83 218 0 159 2 188 17 204 23
+          26 96 25 123 -2z m-562 -282 c18 -18 15 -103 -4 -122 -19 -19 -104 -22 -122
+          -4 -13 13 -17 120 -5 131 11 12 118 8 131 -5z m280 0 c16 -16 16 -110 0 -126
+          -15 -15 -92 -16 -119 -2 -15 9 -19 22 -19 63 0 29 5 58 12 65 16 16 110 16
+          126 0z"/>
+          </g>
+        </svg>
+        </button>
+        <button class="ToDo" id="btnTodo">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+          width="107.000000pt" height="146.000000pt" viewBox="0 0 107.000000 146.000000"
+          preserveAspectRatio="xMidYMid meet">
+         
+          <g transform="translate(0.000000,146.000000) scale(0.100000,-0.100000)"
+         fill="#000000" stroke="none">
+         <path d="M507 1369 c-29 -15 -45 -33 -60 -70 l-22 -49 -96 0 c-105 0 -143 -12
+         -166 -52 -9 -18 -12 -120 -13 -434 0 -436 2 -452 48 -474 15 -6 151 -10 376
+         -10 l353 0 20 23 c11 12 23 31 27 41 10 30 8 824 -3 844 -25 48 -49 57 -159
+         62 l-106 5 -7 29 c-14 52 -82 107 -131 106 -13 -1 -40 -10 -61 -21z m97 -75
+         c19 -18 21 -65 4 -82 -7 -7 -24 -12 -38 -12 -35 0 -50 17 -50 57 0 48 51 71
+         84 37z m-207 -326 c29 -27 29 -45 1 -75 -27 -29 -45 -29 -75 -1 -25 23 -30 67
+         -11 86 19 19 59 14 85 -10z m457 -10 c8 -13 8 -23 0 -35 -10 -16 -32 -18 -179
+         -21 -172 -3 -195 2 -195 37 0 38 19 42 194 39 148 -3 170 -5 180 -20z m-457
+         -190 c29 -27 29 -45 1 -75 -23 -25 -67 -30 -86 -11 -21 21 -15 75 10 92 30 21
+         47 20 75 -6z m459 -35 c12 -46 -11 -53 -187 -53 -130 0 -160 3 -173 16 -18 17
+         -19 24 -10 48 5 14 31 16 185 16 l179 0 6 -27z m-459 -185 c29 -27 29 -45 1
+         -75 -27 -29 -45 -29 -75 -1 -25 23 -30 67 -11 86 19 19 59 14 85 -10z m457
+         -11 c8 -12 8 -22 0 -35 -10 -15 -32 -17 -179 -20 -172 -3 -195 2 -195 37 0 38
+         19 42 194 39 148 -3 170 -5 180 -21z"/>
+         </g>
+        </svg>
+        </button>
+        <div class="color" id="color">
+          <button class="Background" id="Background">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+            width="106.000000pt" height="98.000000pt" viewBox="0 0 106.000000 98.000000"
+            preserveAspectRatio="xMidYMid meet">
+           
+            <g transform="translate(0.000000,98.000000) scale(0.100000,-0.100000)"
+           fill="#000000" stroke="none">
+           <path d="M226 821 c-15 -17 -17 -47 -14 -323 l3 -305 28 -36 28 -37 78 0 c89
+           0 100 7 125 80 13 37 16 97 16 326 0 260 -1 282 -18 297 -15 14 -40 17 -124
+           17 -90 0 -107 -3 -122 -19z m159 -116 c0 -47 -1 -50 -28 -53 -39 -5 -57 14
+           -57 58 0 46 6 52 50 48 l35 -3 0 -50z m3 -187 c3 -43 1 -48 -22 -54 -40 -10
+           -66 11 -66 55 0 47 6 53 50 49 34 -3 35 -4 38 -50z m-1 -274 c9 -24 -21 -48
+           -50 -40 -35 8 -43 37 -17 58 24 19 56 10 67 -18z"/>
+           <path d="M587 672 l-57 -58 0 -182 c0 -140 3 -182 13 -182 21 0 307 293 307
+           315 0 12 -30 51 -73 93 -94 93 -110 95 -190 14z"/>
+           <path d="M627 242 c-70 -70 -127 -131 -127 -135 0 -4 94 -7 208 -7 205 0 209
+           0 230 23 19 20 22 35 22 113 0 127 -6 134 -118 134 l-87 0 -128 -128z"/>
+           </g>
+          </svg>
+        </button>
+  
+        <div id="bgColor">
+          Background
+          <ul class="backgroundColor">
+              <li>Background</li>
+              <li>White</li>
+              <li>Blue</li>
+              <li>Red</li>
+              <li>Yellow</li>
+              <li>Green</li>
+              <li>Black</li>
+              <li>
+                <label for="pictureFile" class="picture" id="picture">
+                  <i class="fa fa-cloud-upload"></i> Select
+                </label>
+                <input type="file" id="pictureFile" name="pictureFile" accept="image/png, image/jpeg">
+              </li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="add">
+        <svg viewBox="0 0 448 512" width="100" title="plus">
+          <path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
+        </svg>
+      </button>
+    </nav>
+
+    <!--- MAIN -->
+    <div class="apps">
+
+      <!-- MAIN CLOCK -->
+      <div class="mainClock" id="mainClock">
+        <div class="time">
+          <h3 id="mainDay"></h3>
+          <h3 id="mainHour"></h3>
+          <h3 id="mainMinute"></h3>
+          <h3 id="mainSecond"></h3>
+          <p id="mainAmpm"></p>
+        </div>
+      </div>
+      <i class="fas fa-eye" id="openClock"></i>
+      <i class="fas fa-eye-slash" id="closeClock"></i>
+
+      <!-- TODO -->
+      <div class="todoGrid">
+          <div class="appTodo" id="appTodo">
+            <!-- ADD TASK -->
+            <div class="addTask">
+              <div class="point"></div>
+              <h3>Create</h3>
+              <div class="box">
+                <form id="taskForm">
+                  <label id="title">Title</label>
+                  <input id="titleTask" type="text" placeholder="Task Title" class="form-control">
+                  </br>
+      
+                  <label id="description">Description</label>
+                    <textarea id="descriptionTask" cols="25" rows="4" class="form-control" placeholder="Task description"></textarea>
+                  </br>
+      
+                  <div class="form-group">
+                    <label id="priority">Priority</label>
+                    <select id="priorityTask">
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                    </select>
+                </form>
+              </div>
+            </div>
+              <button class="listButton" id="addButton">Add</button>
+            </div>
+          
+            <!-- TASK TO DO -->
+            <div id="todo" class="todo">
+              <div class="point"></div>
+              <h3>To do</h3>
+              <ul id="todoTask" class="todoTask">
+              </ul>
+            </div>
+    
+            <!-- TASK DOING -->
+            <div id="doing" class="doing">
+              <div class="point"></div>
+              <h3>Doing</h3>
+              <ul id="doingTasks" class="doingTasks">
+              </ul>
+            </div>
+            
+            <!-- TASK DONE -->
+            <div id="done" class="done">
+              <div class="point"></div>
+              <h3>Done</h3>
+              <ul id="doneTasks" class="doneTasks">
+              </ul>
+            </div>
+      </div>
+
+      <div class="otherApps">
+
+        <!-- CALCULATOR -->
+        <div class="calcGrid">
+            <div class="calcApp" id="calcApp">
+      
+              <div class="modeCalc" id="modeCalc">
+                  <div class="basic">
+                      <h1>Basic</h1>
+                  </div>
+          
+                  <div class="state">
+                      <label id = "switch" class="switch">
+                          <input type="checkbox" id="checkState">
+                          <span class="slider round"></span>
+                      </label>
+                  </div>
+          
+                  <div class="scientific">
+                      <h1>Scientific</h1>
+                  </div>
+              </div>
+      
+              <form name="calc">
+                  <input name="textview" class="screen" id="screen" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;">
+              </form>
+              
+              <table id="buttons">
+                  <tr>
+                      <td> <button id="C" onclick="document.calc.textview.value = ''">C</button> </td>
+                      <td colspan="2"> <button id="←" onclick="document.calc.textview.value = document.calc.textview.value.slice(0,-1)">←</button> </td>
+                      <td> <button class="basicOperator" id="divide" onclick="document.calc.textview.value += '/'">/</button> </td>
+                  </tr>
+                  <tr>
+                      <td> <button onclick="document.calc.textview.value += 7">7</button> </td>
+                      <td> <button onclick="document.calc.textview.value += 8">8</button> </td>
+                      <td> <button onclick="document.calc.textview.value += 9">9</button> </td>
+                      <td> <button class="basicOperator" id="multiply" onclick="document.calc.textview.value += '*'">*</button> </td>
+                  </tr>
+                  <tr>
+                      <td> <button onclick="document.calc.textview.value += 4">4</button> </td>
+                      <td> <button onclick="document.calc.textview.value += 5">5</button> </td>
+                      <td> <button onclick="document.calc.textview.value += 6">6</button> </td>
+                      <td> <button class="basic" id="minus" onclick="document.calc.textview.value += '-'">-</button> </td>
+                  </tr>
+                  <tr>
+                      <td> <button onclick="document.calc.textview.value += 1">1</button> </td>
+                      <td> <button onclick="document.calc.textview.value += 2">2</button> </td>
+                      <td> <button onclick="document.calc.textview.value += 3">3</button> </td>
+                      <td> <button class="basicOperator" id="plus" onclick="document.calc.textview.value += '+'">+</button> </td>
+                  </tr>
+                  <tr>
+                      <td colspan="2"> <button id="zero" onclick="document.calc.textview.value += 0">0</button> </td>
+                      <td> <button onclick="document.calc.textview.value += '.'">.</button> </td>
+                      <td> <button class="basicOperator" id="equals" onclick="document.calc.textview.value = eval(document.calc.textview.value)">=</button> </td>
+                  </tr>
+              </table>
+            </div>
+        </div>
+  
+        <!-- CLOCK -->
+        <div class="clockGrid">
+            <div class="clockApp" id="clockApp">
+      
+              <div class="clockContent" id="digitalClock">
+                
+                <div class="analogClock">
+                  <span class="hourArrow"></span>
+                  <span class="minuteArrow"></span>
+                  <span class="secondArrow"></span>
+                  <span class="core"></span>
+                </div>
+                
+                <div class="ring1"></div>
+                <div class="ring2"></div>
+                <div class="ring3"></div>
+                <div class="outsideButton"></div>
+
+                <div class="point point1">1</div>
+                <div class="point point2">2</div>
+                <div class="point point3">3</div>
+                <div class="point point4">4</div>
+                <div class="point point5">5</div>
+                <div class="point point6">6</div>
+                <div class="point point7">7</div>
+                <div class="point point8">8</div>
+                <div class="point point9">9</div>
+                <div class="point point10">10</div>
+                <div class="point point11">11</div>
+                <div class="point point12">12</div>
+
+                <div class="time">
+                  <h3 id="day"></h3>
+                  <h3 id="hour"></h3>
+                  <h3 id="minute"></h3>
+                  <h3 id="second"></h3>
+                  <p id="ampm"></p>
+                </div>
+              </div>
+      
+              <div class="chronometerButtons" id="chronometerButtons">
+                <button class="clockOptionButton" id="chronoPause"><i class="fas fa-pause"></i></button>
+                <button class="clockOptionButton" id="chronoPlay"><i class="fas fa-play"></i></button>
+                <button class="clockOptionButton" id="chronoRedo"><i class="fas fa-redo"></i></button>
+              </div>
+      
+              <div class="alarmButtons" id="alarmButtons">
+                <input type="time" id="alarmTime" name="alarmTime"
+                  min="00:00" max="11:59" required>
+                <button class="clockOptionButton" id="alarmDesactive"><i class="fas fa-hourglass"></i></button>
+                <button class="clockOptionButton" id="alarmActive"><i class="fas fa-hourglass-half"></i></button>
+              </div>
+  
+              <div class="timerButtons" id="timerButtons">
+                <input type="number" id="timerTime" name="timerTime">
+                <div class="timerControls">
+                  <button class="clockOptionButton" id="playTimer"><i class="fas fa-play"></i></button>
+                  <button class="clockOptionButton" id="pauseTimer"><i class="fas fa-pause"></i></button>
+                  <button class="clockOptionButton" id="resetTimer"><i class="fas fa-redo"></i></button>
+                </div>
+              </div>
+      
+              <form action="" class="optionsClock">
+                <label><i class="fas fa-stopwatch"></i><input type="radio" name="option" id="chronometerCheck"></label>
+                <label><i class="fas fa-bell"></i><input type="radio" name="option" id="alarmCheck"></label>
+                <label><i class="fas fa-hourglass"></i><input type="radio" name="option" id="timerCheck"></label>
+              </form>
+            </div>
+        </div>
+  
+        <!-- CALENDAR -->
+        <div class="calendarGrid">
+          <div class="calendarApp" id="calendarApp">
+  
+            <div class="calendarContent">
+  
+              <div class="calendarButtons">
+                <i id="previus" class="fas fa-chevron-left"></i>
+  
+                <i id="month"></i>
+              
+                <select class="selectMonth" id="selectMonth">
+                  <option class="monthName" value="January">January</option>
+                  <option class="monthName" value="February">February</option>
+                  <option class="monthName" value="March">March</option>
+                  <option class="monthName" value="April">April</option>
+                  <option class="monthName" value="May">May</option>
+                  <option selected class="monthName" value="June">June</option>
+                  <option class="monthName" value="July">July</option>
+                  <option class="monthName" value="August">August</option>
+                  <option class="monthName" value="September">September</option>
+                  <option class="monthName" value="Octuber">Octuber</option>
+                  <option class="monthName" value="November">November</option>
+                  <option class="monthName" value="December">December</option>
+                </select>
+  
+                <i id="year"></i>
+                <input type="number" class="selectYear" id="selectYear">
+  
+                <i id="next" class="fas fa-chevron-right"></i>
+  
+              </div>
+    
+              <div class="calendarWeeks">
+                <div class="calendarDays">
+                  <div class="calendarDay">Mon</div>
+                  <div class="calendarDay">Tue</div>
+                  <div class="calendarDay">Wed</div>
+                  <div class="calendarDay">Thu</div>
+                  <div class="calendarDay">Fri</div>
+                  <div class="calendarDay">Sat</div>
+                  <div class="calendarDay">Sun</div>
+
+                </div>
+              </div>
+    
+              <div class="calendarDate" id="date"></div>
+  
+            </div>
+  
+          </div>
+        </div>
+  
+        <!-- Favorites -->
+        <div class="favoritesGrid">
+            <div class="favoritesApp" id="favoritesApp">
+              <div class="linkArea" id="linkArea">
+                <ul class="favArea" id="favArea">
+
+                  <div class="card">
+                    <a class="cardLink" id="web1" href="https://google.com" target="_blank">
+                      <h5 class="linkName">Google</h5>
+                      <li class="link"><img src="http://www.google.com/s2/favicons?domain=google.com"/></li>
+                    </a>
+                    <button class="deleteLink" id="deleteLink">
+                      <i class="fas fa-times"></i>
+                    </button>
+                    <button class="editLink" id="editLink">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                  </div>
+
+                  <div class="card">
+                    <a class="cardLink" id="web2" href="https://youtube.com" target="_blank">
+                      <h5 class="linkName">Youtube</h5>
+                      <li class="link"><img src="http://www.google.com/s2/favicons?domain=youtube.com"/></li>
+                    </a>
+                    <button class="deleteLink" id="deleteLink">
+                      <i class="fas fa-times"></i>
+                    </button>
+                    <button class="editLink" id="editLink">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                  </div>
+
+                  <div class="card">
+                    <a class="cardLink" id="web3" href="https://twitter.com" target="_blank">
+                      <h5 class="linkName">Twitter</h5>
+                      <li class="link"><img src="http://www.google.com/s2/favicons?domain=twitter.com"/></li>
+                    </a>
+                    <button class="deleteLink" id="deleteLink">
+                      <i class="fas fa-times"></i>
+                    </button>
+                    <button class="editLink" id="editLink">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                  </div>
+
+                </ul>
+              </div>
+      
+              <div class="favFormArea">
+                <form id="favForm">
+                  <label id="favTitle">Favorites</label>
+                  <input id="favUrl" type="text" placeholder="URL" class="form-control">
+                  <div class="favBtn">
+                    <input class="listButton" id="favBtnAdd" type="button" value="Add">
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+  
+        <!-- Traslate -->
+        <div class="traslateGrid">
+          <div class="traslateApp" id="traslateApp">
+            <div id="google_translate_element" class="google"></div>
+    
+            <script type="text/javascript">
+            function googleTranslateElementInit()
+            {
+              new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'es,en,fr,it,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+            }
+            </script>
+            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script type="module" src="js/App.js"></script>
+
+  </body>
+</html>

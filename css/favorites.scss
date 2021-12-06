@@ -1,0 +1,158 @@
+.favoritesApp
+{
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+    background: #242525;
+    border: none;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .linkArea
+    {
+        width: 400px;
+        height: 200px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-image:  linear-gradient(176deg, #3D9DEA, #2844e2);
+        box-shadow: inset 0px 0px 5px #000;
+
+        #favArea
+        {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+    
+            .card
+            {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                width: 100px;
+                height: 60px;
+                margin: 16px;
+                border-radius: 5px;
+                border: none;
+                position: relative;
+                text-decoration: none;
+
+                .cardLink
+                {
+                    width: 100px;
+                    height: 60px;
+                    border-radius: 5px;
+                    background-color: #242525;
+                    box-shadow: 0px 3px 3px #000;
+                    position: relative;
+                    text-decoration: none;
+                    cursor: pointer;
+        
+                    .linkName
+                    {
+                        position: absolute;
+                        top: 10%;
+                        left: 10%;
+                        color: #fff;
+                    }
+        
+                    .link
+                    {
+                        position: absolute;
+                        bottom: 10%;
+                        right: 10%;
+                        list-style: none;
+            
+                        img
+                        {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+
+                button
+                {
+                    color: #242525;
+                    background-color: transparent;
+                    border: none;
+                    position: absolute;
+                    bottom: -35%;
+                    left: 30%;
+                    cursor: pointer;
+    
+                }
+    
+                #deleteLink
+                {
+                    left: 70%;
+                }
+            }
+        }
+    }
+
+    .favFormArea
+    {
+        width: 100%;
+        height: 150px;
+        background-color: #242525;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0px 0px 10px #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #favForm
+        {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: bold;
+    
+            label
+            {
+                font-size: 20px;
+                color: #fff;
+                margin: 10px 0 10px 30px;
+                display: block;
+            }
+        
+            input
+            {
+                font-size: 14px;
+                margin: 10px 0 10px 0px;
+                border: 2px solid rgb(0, 0, 0);
+                display: block;
+            }
+    
+            .favBtn
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 10px;
+    
+                input
+                {
+                    width: 70px;
+                    height: 30px;
+                    border-radius: 5px;
+                    border: 2px solid rgb(0, 0, 0);
+                    margin: 10px 0 10px 0;
+                    cursor: pointer;
+
+                    &:hover
+                    {
+                        opacity: .5;
+                    }
+                }
+    
+            }
+            
+        }
+
+    }
+
+}
