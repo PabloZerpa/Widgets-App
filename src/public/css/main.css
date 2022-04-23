@@ -1,0 +1,208 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body 
+{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  background-color: rgb(15,15,15);
+}
+
+* ::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: #161a27;
+  border-radius: 0.5rem;
+}
+* ::-webkit-scrollbar-thumb {
+  background-color: #27314e;
+  border-radius: 0.5rem;
+}
+* ::-webkit-scrollbar-thumb:hover {
+  background-color: #1d253b;
+}
+
+/*------------------------------ APPS --------------------------------*/
+
+.apps
+{
+  padding: 5% 0 5% 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.otherApps1
+{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.otherApps2
+{
+  display: flex;
+  flex-direction: row;
+
+}
+
+/*------------------------------ NAV --------------------------------*/
+
+.nav {
+  position: fixed;
+  display: flex;
+  margin-top: 5px;
+  margin-left: 5px;
+  flex-direction: column-reverse;
+  gap: .5em;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 999;
+}
+
+.navButton {
+  font-family: inherit;
+  outline: none;
+  border: none;
+  background-color: white;
+  margin: .5rem 0 .5rem 0;
+  padding: 1rem;
+  width: 4rem;
+  height: 4rem;
+  box-shadow: 0px 0px 5px #767b91;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+.navButton svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #4f546c;
+  transition: 600ms transform cubic-bezier(0.785, 0.18, 0.415, 1.65);
+}
+
+.navButton:hover {
+  transform: scale(1.1);
+  transition: 300ms transform cubic-bezier(0.785, 0.18, 0.415, 1.65);
+}
+
+#navOpen
+{
+  border-radius: 100%;
+}
+
+#navOpen svg
+{
+  transform: rotatez(0deg);
+}
+
+
+.nav #bgColor {
+  display: none;
+  position: absolute;
+  left: 4.35rem;
+  top: 15%;
+  background-color: #303030;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+}
+
+#bgColor ul {
+  list-style: none;
+}
+
+#bgColor ul li {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #303030;
+  color: white;
+}
+
+#bgColor ul li:last-child {
+  border-bottom: none;
+}
+
+#bgColor ul li:hover {
+  background-color: gray;
+}
+
+.nav ul input[type="file"] {
+  display: none;
+}
+
+.nav ul .picture {
+  display: inline-block;
+  padding: 3px 0px;
+  cursor: pointer;
+}
+
+
+/*------------------------------ MAIN CLOCK --------------------------------*/
+
+.mainClock
+{
+  position: fixed;
+  right: 2%;
+  top: .5%;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(27, 101, 212), rgb(0, 52, 129));
+  border-radius: 1px;
+  box-shadow: 0 0 5px rgb(54, 54, 54);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  z-index: 100;
+}
+
+.mainClock h3
+{
+    display: inline-block;
+    font-size: 1em;
+}
+
+.mainClock p
+{
+  display: inline-block;
+  font-size: .8em;
+}
+
+#openClock
+{
+  position: fixed;
+  right: 0%;
+  top: 2.5%;
+  opacity: 0;
+  color: rgb(27, 101, 212);
+  cursor: pointer;
+}
+
+#openClock:hover
+{
+  opacity: 1;
+}
+
+#closeClock
+{
+  position: fixed;
+  right: 0%;
+  top: 2.5%;
+  display: none;
+  opacity: 0;
+  color: rgb(27, 101, 212);
+  cursor: pointer;
+}
+
+#closeClock:hover
+{
+  opacity: 1;
+}
+

@@ -1,0 +1,319 @@
+/*------------------------------ CLOCK --------------------------------*/
+
+.clockApp {
+  width: 150px;
+  height: 450px;
+  margin: 5px 60px 5px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+  border: none;
+  box-shadow: 0 0 10px #000;
+  border-radius: 15px;
+}
+
+.clockContent {
+  width: 280px;
+  height: 280px;
+  margin-left: 35px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#1b65d4, #003481);
+  border-radius: 100%;
+  border: 10px solid #636363;
+  box-shadow: inset 0 1px 5px #000;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  position: relative;
+}
+
+.analogClock {
+  overflow: hidden;
+  position: relative;
+  width: 450px;
+  height: 350px;
+  border-radius: 100%;
+}
+
+.clockApp .clockContent .analogClock .minuteArrow,
+.clockApp .clockContent .analogClock .hourArrow {
+  position: absolute;
+  margin: auto;
+  top: -14%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 50px;
+  background-color: #222222;
+  border-radius: 10px;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.clockApp .clockContent .analogClock .minuteArrow {
+  position: absolute;
+  top: -25%;
+  left: 3%;
+  width: 6px;
+  height: 80px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  transform: rotate(90deg);
+}
+
+.clockApp .clockContent .analogClock .secondArrow {
+  position: absolute;
+  margin: auto;
+  top: -26%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 4px;
+  height: 100px;
+  background-color: #222222;
+  border-radius: 4px;
+  transform-origin: bottom center;
+  transform: rotate(180deg);
+  z-index: 1;
+}
+
+.clockApp .clockContent .analogClock .core {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: #222222;
+  box-shadow: 0px 0px 3px #000;
+  border-radius: 100%;
+  margin: auto;
+  z-index: 1;
+}
+
+.clockApp .clockContent .ring1, .clockApp .clockContent .ring2, .clockApp .clockContent .ring3 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 2px solid white;
+  border-radius: 100%;
+  opacity: .5;
+}
+
+.clockApp .clockContent .ring2 {
+  width: 100px;
+  height: 100px;
+}
+
+.clockApp .clockContent .ring3 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.clockApp .clockContent .time {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 13%;
+  right: 35%;
+  width: 75px;
+  height: 25px;
+  background: #fff;
+  color: black;
+  box-shadow: inset 0 2px 5px #000;
+  border-radius: 5px;
+}
+
+.clockApp .clockContent .time h3 {
+  display: inline-block;
+  font-size: .9em;
+}
+
+.clockApp .clockContent .time p {
+  display: inline-block;
+  font-size: .6em;
+}
+
+.clockApp .clockContent .outsideButton {
+  position: absolute;
+  top: 40%;
+  right: -8%;
+  width: 25px;
+  height: 50px;
+  background: linear-gradient(#636363, #333333);
+  box-shadow: 0 0px 5px #000;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  z-index: -10;
+}
+
+.clockApp .clockContent .pointNumber {
+  position: absolute;
+  color: #222222;
+  font-weight: bolder;
+}
+
+.clockApp .clockContent .point12 {
+  right: calc(50% - 10px);
+  top: 1%;
+}
+
+.clockApp .clockContent .point1 {
+  right: 22%;
+  top: 6.5%;
+}
+
+.clockApp .clockContent .point2 {
+  right: 6%;
+  top: 25%;
+}
+
+.clockApp .clockContent .point3 {
+  right: 1%;
+  top: calc(50% - 10px);
+}
+
+.clockApp .clockContent .point4 {
+  right: 6%;
+  top: 69%;
+}
+
+.clockApp .clockContent .point5 {
+  right: 22%;
+  top: 84%;
+}
+
+.clockApp .clockContent .point6 {
+  right: calc(50% - 10px);
+  top: calc(99% - 20px);
+}
+
+.clockApp .clockContent .point7 {
+  left: 22%;
+  top: 84%;
+}
+
+.clockApp .clockContent .point8 {
+  left: 6%;
+  top: 69%;
+}
+
+.clockApp .clockContent .point9 {
+  left: 1%;
+  top: calc(50% - 10px);
+}
+
+.clockApp .clockContent .point10 {
+  left: 6%;
+  top: 25%;
+}
+
+.clockApp .clockContent .point11 {
+  left: 22%;
+  top: 6.5%;
+}
+
+.clockApp .optionsClock {
+  width: 350px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clockApp .optionsClock input {
+  margin: 0 10px 0 10px;
+}
+
+.clockApp .optionsClock label {
+  font-size: 14px;
+}
+
+.clockApp .clockOptionBtn {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #fff;
+  border: solid 1px black;
+  cursor: pointer;
+}
+
+.clockApp .clockOptionBtn:hover {
+  opacity: .5;
+}
+
+.clockApp .chronoBtn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.clockApp .chronoBtn #chronoPause {
+  margin-right: 10px;
+  display: none;
+}
+
+.clockApp .chronoBtn #chronoPlay {
+  margin-right: 10px;
+}
+
+.clockApp .alarmBtn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clockApp .alarmBtn #alarmTime {
+  display: flex;
+  margin-top: 10px;
+}
+
+.clockApp .alarmBtn #alarmDesactive {
+  margin-top: 10px;
+}
+
+.clockApp .alarmBtn #alarmActive {
+  display: none;
+}
+
+.clockApp .timerBtn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clockApp .timerBtn input {
+  width: 100px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.clockApp .timerBtn .timerControls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.clockApp .timerBtn .timerControls #pauseTimer {
+  display: none;
+}
+
+.clockApp .timerBtn .timerControls button {
+  margin-right: 10px;
+}

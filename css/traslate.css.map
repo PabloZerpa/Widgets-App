@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACA,AAAA,YAAY,CACZ;EAKI,MAAM,EAAE,GAAG,CAAC,KAAK,CAAC,KAAY;CAKjC",
-    "sources": [
-        "traslate.scss"
-    ],
-    "names": [],
-    "file": "traslate.css"
-}
