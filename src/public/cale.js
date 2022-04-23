@@ -1,20 +1,23 @@
+// -------------------- CALENDAR --------------------------
+
 export class Calendar
 {
-    active(calendarState)
+    active(caleState)
     {
-        let btnCalendar = document.getElementById("btnCalendar");
-        btnCalendar.addEventListener( 'click', function() 
+        let navCale = document.getElementById("navCale");
+        navCale.addEventListener( 'click', function() 
         {
-            calendarState = !calendarState;
-            if(calendarState) 
+            caleState = !caleState;
+
+            if(caleState) 
             {
-                document.getElementById("btnCalendar").style.backgroundColor = "rgb(93, 156, 238)";
-                document.getElementById("calendarApp").style.display = "grid";
+                this.style.backgroundColor = "white";
+                document.getElementById("appCale").style.display = "none";
             }
             else 
             {
-                document.getElementById("btnCalendar").style.backgroundColor = "rgb(255, 255, 255)";
-                document.getElementById("calendarApp").style.display = "none";
+                this.style.backgroundColor = "#1b65d4";
+                document.getElementById("appCale").style.display = "block";
             }
         })
     }

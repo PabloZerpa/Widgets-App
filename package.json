@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/PabloZerpa/Widgets-App#readme",
   "dependencies": {
+    "axios": "^0.26.1",
+    "express": "^4.17.3",
     "gh-pages": "^3.2.3"
   }
 }

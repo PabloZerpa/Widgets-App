@@ -1,7 +1,9 @@
+/*------------------------------ CLOCK --------------------------------*/
+
 .clockApp {
   width: 150px;
   height: 450px;
-  margin: 10px 60px 10px 80px;
+  margin: 5px 60px 5px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +13,7 @@
   border-radius: 15px;
 }
 
-.clockApp .clockContent {
+.clockContent {
   width: 280px;
   height: 280px;
   margin-left: 35px;
@@ -28,10 +30,10 @@
   position: relative;
 }
 
-.clockApp .clockContent .analogClock {
+.analogClock {
   overflow: hidden;
   position: relative;
-  width: 350px;
+  width: 450px;
   height: 350px;
   border-radius: 100%;
 }
@@ -154,7 +156,7 @@
   z-index: -10;
 }
 
-.clockApp .clockContent .point {
+.clockApp .clockContent .pointNumber {
   position: absolute;
   color: #222222;
   font-weight: bolder;
@@ -236,7 +238,7 @@
   font-size: 14px;
 }
 
-.clockApp .clockOptionButton {
+.clockApp .clockOptionBtn {
   width: 25px;
   height: 25px;
   display: flex;
@@ -248,59 +250,59 @@
   cursor: pointer;
 }
 
-.clockApp .clockOptionButton:hover {
+.clockApp .clockOptionBtn:hover {
   opacity: .5;
 }
 
-.clockApp .chronometerButtons {
+.clockApp .chronoBtn {
   display: none;
   justify-content: center;
   align-items: center;
 }
 
-.clockApp .chronometerButtons #chronoPause {
+.clockApp .chronoBtn #chronoPause {
   margin-right: 10px;
   display: none;
 }
 
-.clockApp .chronometerButtons #chronoPlay {
+.clockApp .chronoBtn #chronoPlay {
   margin-right: 10px;
 }
 
-.clockApp .alarmButtons {
+.clockApp .alarmBtn {
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.clockApp .alarmButtons #alarmTime {
+.clockApp .alarmBtn #alarmTime {
   display: flex;
   margin-top: 10px;
 }
 
-.clockApp .alarmButtons #alarmDesactive {
+.clockApp .alarmBtn #alarmDesactive {
   margin-top: 10px;
 }
 
-.clockApp .alarmButtons #alarmActive {
+.clockApp .alarmBtn #alarmActive {
   display: none;
 }
 
-.clockApp .timerButtons {
+.clockApp .timerBtn {
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.clockApp .timerButtons input {
+.clockApp .timerBtn input {
   width: 100px;
   margin-top: 20px;
   cursor: pointer;
 }
 
-.clockApp .timerButtons .timerControls {
+.clockApp .timerBtn .timerControls {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -308,11 +310,10 @@
   margin-top: 10px;
 }
 
-.clockApp .timerButtons .timerControls #pauseTimer {
+.clockApp .timerBtn .timerControls #pauseTimer {
   display: none;
 }
 
-.clockApp .timerButtons .timerControls button {
+.clockApp .timerBtn .timerControls button {
   margin-right: 10px;
 }
-/*# sourceMappingURL=clock.css.map */

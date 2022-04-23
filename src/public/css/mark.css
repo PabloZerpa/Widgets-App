@@ -1,7 +1,9 @@
-.favoritesApp {
+/*------------------------------ BOOKMARK --------------------------------*/
+
+.appMark {
   width: 400px;
   height: 250px;
-  margin: 10px;
+  margin: 5px 5px 5px 50px;
   background: #242525;
   border: none;
   box-shadow: 0 0 10px #000;
@@ -11,7 +13,7 @@
   align-items: center;
 }
 
-.favoritesApp .linkArea {
+.appMark .linkArea {
   width: 400px;
   height: 200px;
   border-top-left-radius: 10px;
@@ -20,13 +22,13 @@
   box-shadow: inset 0px 0px 5px #000;
 }
 
-.favoritesApp .linkArea #favArea {
+.appMark .linkArea #markArea {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-.favoritesApp .linkArea #favArea .card {
+.appMark .linkArea #markArea .card {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -39,7 +41,7 @@
   text-decoration: none;
 }
 
-.favoritesApp .linkArea #favArea .card .cardLink {
+.appMark .linkArea #markArea .card .cardLink {
   width: 100px;
   height: 60px;
   border-radius: 5px;
@@ -50,26 +52,26 @@
   cursor: pointer;
 }
 
-.favoritesApp .linkArea #favArea .card .cardLink .linkName {
+.appMark .linkArea #markArea .card .cardLink .linkName {
   position: absolute;
   top: 10%;
   left: 10%;
   color: #fff;
 }
 
-.favoritesApp .linkArea #favArea .card .cardLink .link {
+.appMark .linkArea #markArea .card .cardLink .link {
   position: absolute;
   bottom: 10%;
   right: 10%;
   list-style: none;
 }
 
-.favoritesApp .linkArea #favArea .card .cardLink .link img {
+.appMark .linkArea #markArea .card .cardLink .link img {
   width: 30px;
   height: 30px;
 }
 
-.favoritesApp .linkArea #favArea .card button {
+.appMark .linkArea #markArea .card button {
   color: #242525;
   background-color: transparent;
   border: none;
@@ -79,11 +81,11 @@
   cursor: pointer;
 }
 
-.favoritesApp .linkArea #favArea .card #deleteLink {
+.appMark .linkArea #markArea .card .deleteLink {
   left: 70%;
 }
 
-.favoritesApp .favFormArea {
+.appMark .markFormArea {
   width: 100%;
   height: 150px;
   background-color: #242525;
@@ -95,26 +97,26 @@
   align-items: center;
 }
 
-.favoritesApp .favFormArea #favForm {
+.appMark .markFormArea #markForm {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: bold;
 }
 
-.favoritesApp .favFormArea #favForm label {
+.appMark .markFormArea #markForm label {
   font-size: 20px;
   color: #fff;
   margin: 10px 0 10px 30px;
   display: block;
 }
 
-.favoritesApp .favFormArea #favForm input {
+.appMark .markFormArea #markForm input {
   font-size: 14px;
   margin: 10px 0 10px 0px;
   border: 2px solid black;
   display: block;
 }
 
-.favoritesApp .favFormArea #favForm .favBtn {
+.appMark .markFormArea #markForm .markBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,7 +124,7 @@
   gap: 10px;
 }
 
-.favoritesApp .favFormArea #favForm .favBtn input {
+.appMark .markFormArea #markForm .markBtn input {
   width: 70px;
   height: 30px;
   border-radius: 5px;
@@ -131,7 +133,6 @@
   cursor: pointer;
 }
 
-.favoritesApp .favFormArea #favForm .favBtn input:hover {
+.appMark .markFormArea #markForm .markBtn input:hover {
   opacity: .5;
 }
-/*# sourceMappingURL=favorites.css.map */

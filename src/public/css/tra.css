@@ -1,0 +1,57 @@
+/*------------------------------ TRANSLATOR --------------------------------*/
+
+.appTra
+{
+  font-family: sans-serif;
+  margin: 5px 5px 5px 20px;
+}
+
+.traBox
+{
+  width: 750px;
+  height: 330px;
+  background-color: #1b65d4;;
+  display: flex;
+  flex-direction: row;
+  padding: 2% 1% 1% 2%;
+  gap: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #000;
+}
+
+.traArea
+{
+  width: 350px;
+  height: 300px;
+  background-color: #242525;
+  border-radius: 3px;
+
+}
+
+.traArea textArea
+{
+  width: 330px;
+  height: 240px;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold; 
+}
+
+.traLabel
+{
+  color: white;
+  font-size: 18px;
+  margin-left: 18%;
+}
+
+.traSelect
+{
+  background-color: #242525;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+}

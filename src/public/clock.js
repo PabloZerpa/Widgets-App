@@ -1,3 +1,5 @@
+// -------------------- CLOCK --------------------------
+
 export class Clock
 {
   
@@ -23,7 +25,7 @@ export class Clock
   start(clockState)
   {
 
-    let btnClock = document.getElementById("btnClock");
+    let navClock = document.getElementById("navClock");
     let clockDigital;
     document.getElementById("hour").innerText = "00:";
     document.getElementById("minute").innerText = "00:";
@@ -37,20 +39,20 @@ export class Clock
 
     // ============================================================================
 
-    btnClock.addEventListener( 'click', function() 
+    navClock.addEventListener( 'click', function() 
     {
       clockState = !clockState;
       if(clockState) 
       {
-        document.getElementById("btnClock").style.backgroundColor = "rgb(93, 156, 238)";
+        document.getElementById("navClock").style.backgroundColor = "#1b65d4";
         document.getElementById("clockApp").style.display = "grid";
 
         //------------------------------------------ TIMER EVENT -----------------------------------------------//
         document.getElementById("timerCheck").addEventListener("change", function()
         {
-          document.getElementById("timerButtons").style.display = "flex";
-          document.getElementById("chronometerButtons").style.display = "none";
-          document.getElementById("alarmButtons").style.display = "none";
+          document.getElementById("timerBtn").style.display = "flex";
+          document.getElementById("chronoBtn").style.display = "none";
+          document.getElementById("alarmBtn").style.display = "none";
 
           document.getElementById("hour").innerText = "";
           document.getElementById("minute").innerText = "";
@@ -105,7 +107,7 @@ export class Clock
         //-------------------------- PAUSE CHRONOMETER -------------------------------//
         document.getElementById("chronoPause").addEventListener("click", function(e)
         {
-          if(document.getElementById("chronometerCheck").checked)
+          if(document.getElementById("chronoCheck").checked)
           {
 
             document.getElementById("chronoPause").style.display = "none";
@@ -117,7 +119,7 @@ export class Clock
         //-------------------------- PLAY CHRONOMETER -------------------------------//
         document.getElementById("chronoPlay").addEventListener("click", function(e)
         {
-          if(document.getElementById("chronometerCheck").checked)
+          if(document.getElementById("chronoCheck").checked)
           {
             document.getElementById("chronoPlay").style.display = "none";
             document.getElementById("chronoPause").style.display = "flex";
@@ -155,7 +157,7 @@ export class Clock
         //-------------------------- REDO CHRONOMETER -------------------------------//
         document.getElementById("chronoRedo").addEventListener("click", function(e)
         {
-          if(document.getElementById("chronometerCheck").checked)
+          if(document.getElementById("chronoCheck").checked)
           {
             clearInterval(clockDigital);
             document.getElementById("chronoPause").style.display = "none";
@@ -171,14 +173,14 @@ export class Clock
         })
 
         //-------------------------- RADIO-BUTTON CHRONOMETER -------------------------------//
-        document.getElementById("chronometerCheck").addEventListener("change", function()
+        document.getElementById("chronoCheck").addEventListener("change", function()
         {
-          if(document.getElementById("chronometerCheck").checked)
+          if(document.getElementById("chronoCheck").checked)
           {
             clearInterval(clockDigital);
-            document.getElementById("alarmButtons").style.display = "none";
-            document.getElementById("timerButtons").style.display = "none";
-            document.getElementById("chronometerButtons").style.display = "flex";
+            document.getElementById("alarmBtn").style.display = "none";
+            document.getElementById("timerBtn").style.display = "none";
+            document.getElementById("chronoBtn").style.display = "flex";
 
             document.getElementById("hour").innerText = "00:";
             document.getElementById("minute").innerText = "00:";
@@ -193,9 +195,9 @@ export class Clock
           if(document.getElementById("alarmCheck").checked)
           {
             clearInterval(clockDigital);
-            document.getElementById("chronometerButtons").style.display = "none";
-            document.getElementById("timerButtons").style.display = "none";
-            document.getElementById("alarmButtons").style.display = "flex";
+            document.getElementById("chronoBtn").style.display = "none";
+            document.getElementById("timerBtn").style.display = "none";
+            document.getElementById("alarmBtn").style.display = "flex";
 
             document.getElementById("hour").innerText = "00:";
             document.getElementById("minute").innerText = "00";
@@ -257,7 +259,7 @@ export class Clock
       }
       else 
       {
-        document.getElementById("btnClock").style.backgroundColor = "rgb(255, 255, 255)";
+        document.getElementById("navClock").style.backgroundColor = "rgb(255, 255, 255)";
         document.getElementById("clockApp").style.display = "none";
         clearInterval(clockDigital);
       }

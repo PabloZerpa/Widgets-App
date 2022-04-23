@@ -1,16 +1,19 @@
+/*------------------------------ CALCULATOR --------------------------------*/
+
 @charset "UTF-8";
-.calcApp {
+.appCalc {
+  display: block;
   width: 270px;
   height: 430px;
   padding: 10px 10px;
-  margin: 10px;
+  margin: 5px 5px 5px 50px;
   border-radius: 20px;
   box-shadow: 0 0 10px #000;
   background: #000000;
   /* SWITCH */
 }
 
-.calcApp .screen {
+.appCalc .screen {
   width: 95%;
   height: 40px;
   padding: 10px;
@@ -25,7 +28,7 @@
   text-align: center;
 }
 
-.calcApp button {
+.appCalc button {
   width: 50px;
   height: 50px;
   padding: 0px;
@@ -43,18 +46,20 @@
   text-align: center;
 }
 
-.calcApp #←, .calcApp #zero {
+.appCalc #←, .appCalc #zero {
   width: 110px;
   height: 50px;
   border-radius: 5px;
 }
 
-.calcApp #plus, .calcApp #minus, .calcApp #multiply, .calcApp #divide, .calcApp #equals,
-.calcApp #sin, .calcApp #cos, .calcApp #tan, .calcApp #exp, .calcApp #log, .calcApp #reverse, .calcApp #facto, .calcApp #module, .calcApp #pow, .calcApp #sqrt {
+.appCalc #plus, .appCalc #minus, .appCalc #multiply, .appCalc #divide, .appCalc #equals,
+.appCalc #sin, .appCalc #cos, .appCalc #tan, .appCalc #exp, .appCalc #log, .appCalc #reverse, 
+.appCalc #facto, .appCalc #module, .appCalc #pow, .appCalc #sqrt 
+{
   background: #0a3c99;
 }
 
-.calcApp button:hover {
+.appCalc button:hover {
   transform: scale(1.08);
   border: 3px solid black;
   background: #fffb00;
@@ -62,19 +67,19 @@
   transition: .5s;
 }
 
-.calcApp .modeCalc {
+.appCalc .modeCalc {
   position: relative;
   display: flex;
   flex-direction: row;
 }
 
-.calcApp h1 {
+.appCalc h1 {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
 }
 
-.calcApp .switch {
+.appCalc .switch {
   position: relative;
   display: inline-block;
   width: 60px;
@@ -82,13 +87,13 @@
   margin: 5px 20px 0 35px;
 }
 
-.calcApp .switch input {
+.appCalc .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.calcApp .switch .slider {
+.appCalc .switch .slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -100,7 +105,7 @@
   transition: .4s;
 }
 
-.calcApp .switch .slider:before {
+.appCalc .switch .slider:before {
   position: absolute;
   content: "";
   height: 26px;
@@ -112,25 +117,24 @@
   transition: .4s;
 }
 
-.calcApp .switch input:checked + .slider {
+.appCalc .switch input:checked + .slider {
   background-color: #2196F3;
 }
 
-.calcApp .switch input:focus + .slider {
+.appCalc .switch input:focus + .slider {
   box-shadow: 0 0 1px #2196F3;
 }
 
-.calcApp .switch input:checked + .slider:before {
+.appCalc .switch input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 
-.calcApp .switch .slider.round {
+.appCalc .switch .slider.round {
   border-radius: 34px;
 }
 
-.calcApp .switch .slider.round:before {
+.appCalc .switch .slider.round:before {
   border-radius: 50%;
 }
-/*# sourceMappingURL=calc.css.map */

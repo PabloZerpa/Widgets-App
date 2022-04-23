@@ -1,3 +1,4 @@
+// -------------------- CALCULATOR --------------------------
 
 export class Calculator
 {
@@ -5,25 +6,28 @@ export class Calculator
   //ACTIVE / DESACTIVE CALCULATOR
   active(calcState)
   {
-    let btnCalc = document.getElementById("btnCalculator");
-    btnCalc.addEventListener( 'click', function() {
-      calcState = !calcState
+    let navCalc = document.getElementById("navCalc");
+    navCalc.addEventListener( 'click', function() {
+
+      calcState = !calcState;
+
       if(calcState) 
       {
-        document.getElementById("btnCalculator").style.backgroundColor = "rgb(93, 156, 238)";
-        document.getElementById("calcApp").style.display = "grid";
+        document.getElementById("appCalc").style.display = "none";
+        document.getElementById("screen").value = "";
+        this.style.backgroundColor = "white";
       } 
       else 
       {
-        document.getElementById("btnCalculator").style.backgroundColor = "rgb(255, 255, 255)";
-        document.getElementById("calcApp").style.display = "none";
+        this.style.backgroundColor = "#1b65d4";
+        document.getElementById("appCalc").style.display = "block";
       }
     });
   }
 
   start()
   {
-    let calcBody = document.getElementById("calcApp");
+    let calcBody = document.getElementById("appCalc");
     let varState = false;
   
     let state = document.getElementById("checkState");
@@ -32,7 +36,7 @@ export class Calculator
       varState = !varState;
       if(varState)
       {
-        calcBody.style.width = 450 + "px";
+        calcBody.style.width = 380 + "px";
         document.getElementById("modeCalc").style.marginLeft = 80 + "px";
         document.getElementById("buttons").innerHTML = 
         `

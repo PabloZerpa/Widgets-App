@@ -1,23 +1,23 @@
-.calendarApp {
+/*------------------------------ CALENDAR --------------------------------*/
+
+.appCale {
   display: block;
+  margin: 10px;
 }
 
-.calendarApp .calendarContent {
+.appCale .calendarContent {
   width: 350px;
   height: 330px;
-  margin: 10px;
+  margin: 10px 10px 10px 40px;
   border-radius: 10px;
   border: none;
   box-shadow: 0 0 10px #000;
   background: #242525;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0px;
+  display: block;
+
 }
 
-.calendarApp .calendarContent .calendarButtons {
+.appCale .calendarContent .calendarButtons {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -29,25 +29,25 @@
   border-top-right-radius: 10px;
 }
 
-.calendarApp .calendarContent .calendarButtons i, .calendarApp .calendarContent .calendarButtons select {
+.appCale .calendarContent .calendarButtons i, .appCale .calendarContent .calendarButtons select {
   margin-top: 10px;
   font-size: 18px;
   font-weight: bolder;
   cursor: pointer;
 }
 
-.calendarApp .calendarContent .calendarButtons i:hover, .calendarApp .calendarContent .calendarButtons select:hover {
+.appCale .calendarContent .calendarButtons i:hover, .appCale .calendarContent .calendarButtons select:hover {
   color: #fff;
 }
 
-.calendarApp .calendarContent .calendarButtons select {
+.appCale .calendarContent .calendarButtons select {
   width: 120px;
   background-color: transparent;
   border: none;
   color: #000;
 }
 
-.calendarApp .calendarContent .calendarButtons select option {
+.appCale .calendarContent .calendarButtons select option {
   background-color: #1b65d4;
   color: #fff;
   background-color: #000;
@@ -55,7 +55,7 @@
   font-weight: bold;
 }
 
-.calendarApp .calendarContent .calendarButtons input[type=number] {
+.appCale .calendarContent .calendarButtons input[type=number] {
   width: 70px;
   display: block;
   margin-top: 10px;
@@ -68,19 +68,19 @@
   cursor: pointer;
 }
 
-.calendarApp .calendarContent .calendarButtons input[type=number]:hover {
+.appCale .calendarContent .calendarButtons input[type=number]:hover {
   color: #fff;
 }
 
-.calendarApp .calendarContent .calendarButtons #month {
+.appCale .calendarContent .calendarButtons #month {
   display: none;
 }
 
-.calendarApp .calendarContent .calendarButtons #year {
+.appCale .calendarContent .calendarButtons #year {
   display: none;
 }
 
-.calendarApp .calendarContent .calendarWeeks {
+.appCale .calendarContent .calendarWeeks {
   width: 100%;
   height: 30px;
   color: #000;
@@ -89,25 +89,25 @@
   box-shadow: 0px 9px 10px #000;
 }
 
-.calendarApp .calendarContent .calendarWeeks .calendarDays {
+.appCale .calendarContent .calendarWeeks .calendarDays {
   width: 70%;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   font-weight: bolder;
 }
 
-.calendarApp .calendarContent .calendarWeeks .calendarDays .calendarDay {
+.appCale .calendarContent .calendarWeeks .calendarDays .calendarDay {
   margin-left: 21px;
 }
 
-.calendarApp .calendarContent .calendarDate {
+.appCale .calendarContent .calendarDate {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 15px;
   font-weight: bolder;
 }
 
-.calendarApp .calendarContent .calendarDate p {
+.appCale .calendarContent .calendarDate p {
   width: 25px;
   height: 25px;
   display: flex;
@@ -120,17 +120,16 @@
   cursor: pointer;
 }
 
-.calendarApp .calendarContent .calendarDate p:hover {
+.appCale .calendarContent .calendarDate p:hover {
   background-color: #1b65d4;
   color: #fff;
 }
 
-.calendarApp .calendarContent .calendarDate .current {
+.appCale .calendarContent .calendarDate .current {
   background-color: #1b65d4;
   color: #fff;
 }
 
-.calendarApp .calendarContent .calendarDate .ghostDay {
+.appCale .calendarContent .calendarDate .ghostDay {
   opacity: .5;
 }
-/*# sourceMappingURL=calendar.css.map */
