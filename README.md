@@ -1,4 +1,4 @@
 # Widgets App
 
 # Screenshot
-![](./public/widgets.png)
+![](./src/public/widgets.png)
